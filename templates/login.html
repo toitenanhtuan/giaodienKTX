@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <title>Ký túc xá Đại học Duy Tân</title>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const username = document.querySelector('input[type="text"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+
+            if (username && password) {
+                window.location.href = "screen.html";
+            } else {
+                alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <div class="logo">
+                <img src="../static/resouces/image/logoDTU.png" alt="Logo Duy Tân">
+            </div>
+            <h2>KÝ TÚC XÁ<br>ĐẠI HỌC DUY TÂN</h2>
+            <form onsubmit="validateForm(event)">
+                <input type="text" placeholder="Tên đăng nhập" required>
+                <input type="password" placeholder="Mật khẩu" required>
+                <button type="submit" class="login-button">ĐĂNG NHẬP</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

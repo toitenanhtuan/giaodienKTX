@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/thongtin.css">
+    <title>Thông tin Sinh viên</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/resouces/image/logoDTU.png" alt="Logo Duy Tân">
+            <span>my DUY TÂN</span>
+        </div>
+        <div class="language-selector">
+            Việt Nam English ••
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar"></div>
+                <span>User Name</span>
+            </div>
+            <nav>
+                <div class="menu-item">Quản lý tài khoản ▼</div>
+                <div class="submenu">
+                    <a href="#">Tài khoản sinh viên</a>
+                    <a href="#">Tài khoản nhân viên</a>
+                </div>
+                
+                <div class="menu-item">Quản lý phòng ▼</div>
+                <div class="submenu">
+                    <a href="#">Ban quản lý</a>
+                    <a href="#">Thông tin phòng</a>
+                </div>
+                
+                <div class="menu-item">Quản lý hợp đồng ▼</div>
+                <div class="submenu">
+                    <a href="#">Thông tin hợp đồng</a>
+                    <a href="#">Mã hợp đồng</a>
+                </div>
+                
+                <div class="menu-item">Quản lý sinh viên ▼</div>
+                <div class="submenu">
+                    <a href="thongtin.html">Thông tin sinh viên</a>
+                    <a href="recognition.html">Lịch sử ra/vào</a>
+                </div>
+                
+                <div class="menu-item">Báo cáo ▼</div>
+            </nav>
+        </aside>
+        <main>
+            <h1>Danh sách sinh viên</h1>
+            <div class="filters">
+                <select>
+                    <option>Thêm trường lọc ▼</option>
+                </select>
+                <input type="text" placeholder="Họ và tên 🔍">
+                <select>
+                    <option>Trạng thái học tập ▼</option>
+                </select>
+                <input type="text" placeholder="Mã số sinh viên">
+            </div>
+            <div class="status-filters">
+                <div class="status-filter">
+                    <input type="radio" id="total" name="status" checked>
+                    <label for="total">Tổng số sinh viên</label>
+                </div>
+                <div class="status-filter">
+                    <input type="radio" id="studying" name="status">
+                    <label for="studying">Đang tham gia học tập</label>
+                </div>
+                <div class="status-filter">
+                    <input type="radio" id="graduated" name="status">
+                    <label for="graduated">Đã nghỉ</label>
+                </div>
+                <div class="status-filter">
+                    <input type="radio" id="suspended" name="status">
+                    <label for="suspended">Nghỉ tạm thời</label>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>HỌ VÀ TÊN</th>
+                        <th>TOÀ</th>
+                        <th>SỐ ĐIỆN THOẠI</th>
+                        <th>TÊN HỢP ĐỒNG</th>
+                        <th>NGÀY KÍ KẾT</th>
+                        <th>CHỨC NĂNG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="8" class="no-data">
+                            <img src="/api/placeholder/50/50" alt="No data icon">
+                            <p>NO DATA</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script>
+        // JavaScript for handling the dropdown functionality
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

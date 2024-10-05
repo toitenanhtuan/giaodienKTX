@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+header {
+    background-color: #d9434e;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.language-selector {
+    background-color: rgb(199, 117, 117);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.sidebar {
+    background-color: #d9434e;
+    color: white;
+    width: 250px;
+    padding: 20px;
+}
+.back-button {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+.camera-container {
+    background-color: #ddd;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.info-item {
+    background-color: #ddd;
+    padding: 10px;
+    min-height: 100px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

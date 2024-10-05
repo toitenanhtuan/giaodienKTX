@@ -1,0 +1,342 @@
+/*  TABLE OF CONTENTS
+1. Selectbox
+2. Button
+3. Input
+4. Text
+5. Heading
+6. Container */
+
+:root {
+    /* Color */
+    --black_900: #000000;
+    --black_900_0c: #0000000c;
+    --black_900_3f: #0000003f;
+    --blue_gray_100: #d9d9d9;
+    --blue_gray_400: #898989;
+    --character_title_85: #000000d8;
+    --conditional_item_background_hover: #f5f5f5;
+    --conditional_pop_over: #ffffff;
+    --deep_orange_900: #bd341a;
+    --deep_orange_a400: #f92700;
+    --gray_100: #f3f3f3;
+    --gray_300: #ece3ec;
+    --gray_300_01: #e4e4e4;
+    --gray_400: #c9c4c4;
+    --gray_900: #301e1e;
+    --light_blue_200: #6fcbff;
+    --red_300: #ef6363;
+    --red_600: #ef3939;
+    --red_700: #ca3232;
+    --red_a700: #fc0000;
+    --red_a700_01: #ff0000;
+    --white_a700: #fdfdfd;
+
+    /* Shadow */
+    --shadow-xs: 0 9px 28px 8px #0000000c;
+
+    /* Border radius */
+    --radius-xs: 1px;
+    --radius-sm: 3px;
+    --radius-md: 5px;
+    --radius-lg: 6px;
+    --radius-xl: 14px;
+    --radius-2xl: 20px;
+    --radius-3xl: 28px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 6px;
+    --space-md: 7px;
+    --space-lg: 8px;
+    --space-xl: 9px;
+    --space-2xl: 10px;
+    --space-3xl: 12px;
+    --space-4xl: 14px;
+    --space-5xl: 16px;
+    --space-6xl: 22px;
+    --space-7xl: 24px;
+    --space-8xl: 28px;
+    --space-9xl: 34px;
+    --space-10xl: 38px;
+    --space-11xl: 44px;
+    --space-12xl: 48px;
+
+}
+
+/*      1. Selectbox     */
+
+.ui.selectbox.round {
+    border-radius: var(--radius-sm);
+}
+
+.ui.selectbox.size-xs {
+    height: 20px;
+    padding-left: var(--space-3xl);
+    padding-right: 2px;
+    font-size: 10px;
+}
+
+.ui.selectbox.size-sm {
+    height: 36px;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-xs);
+    font-size: 10px;
+}
+
+.ui.selectbox.fill.red_700 {
+    background-color: var(--red_700);
+    color: var(--conditional_pop_over);
+}
+
+.ui.selectbox.fill.conditional_pop_over {
+    background-color: var(--conditional_pop_over);
+    color: var(--blue_gray_400);
+}
+
+.ui.selectbox {
+    display: flex;
+}
+
+
+/*      2. Button        */
+
+.ui.button.round {
+    border-radius: var(--radius-sm);
+}
+
+.ui.button.square {
+    border-radius: 0px;
+}
+
+.ui.button.size-xs {
+    height: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 10px;
+}
+
+.ui.button.size-lg {
+    height: 102px;
+    padding-left: var(--space-4xl);
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.ui.button.size-md {
+    height: 100px;
+    padding-left: var(--space-9xl);
+    padding-right: var(--space-9xl);
+    font-size: 15px;
+}
+
+.ui.button.fill.red_600 {
+    background-color: var(--red_600);
+    color: var(--conditional_pop_over);
+}
+
+.ui.button.fill.red_700 {
+    background-color: var(--red_700);
+    color:  var(--conditional_item_background_hover);
+}
+
+.ui.button.fill.conditional_pop_over {
+    background-color: var(--conditional_pop_over);
+    color: var(--blue_gray_400);
+}
+
+.ui.button.fill.gray_300 {
+    background-color: var(--gray_300);
+    color: var(--black_900);
+}
+
+.ui.button {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+/*      3. Input        */
+
+.ui.input.size-xs {
+    height: 74px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.ui.input.size-sm {
+    height: 74px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ui.input.fill.conditional_pop_over {
+    background-color: var(--conditional_pop_over);
+    color: var(--black_900);
+}
+
+.ui.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    background-color:  var(--conditional_pop_over);
+    align-self: stretch;
+    border-radius: var(--radius-2xl);
+}
+
+
+/*      4. Text      */
+
+.ui.text.size-body_regular {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textxs {
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textxs {
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-texts {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textmd {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textlg {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ui.text.size-textxl {
+    font-size: 20px;
+    font-weight: 100;
+    font-style: bold;
+}
+
+.ui.text.size-text2xl {
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    @media only screen and (max-width: 1050px) {
+        font-size: 24px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 22px;
+    }
+}
+
+.ui.text.size-text3xl {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 30px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 28px;
+    }
+}
+
+.ui.text {
+    color: var(--black_900);
+    font-family: Inter;
+}
+
+/*      5. Heading       */
+
+.ui.heading.size-text {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold;
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 28px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 26px;
+    }
+}
+
+.ui.heading.size-headingxs {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.ui.heading.size-headings {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: bold;
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 38px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 36px;
+    }
+}
+
+.ui.heading.size-headingmd {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: bold;
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 44px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 38px;
+    }
+}
+
+.ui.heading {
+    color: var(--conditional_pop_over);
+    font-family: Inter;
+}
+
+
+/*      6. Container         */
+
+.container-xs {
+    max-width: 814px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-sm {
+    max-width: 930px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

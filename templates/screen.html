@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/screen.css">
+    <title>Hệ thống quản lý Ký túc xá Trường Đại học Duy Tân</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/resouces/image/logoDTU.png" alt="Logo Duy Tân">
+            <span>my DUY TÂN</span>
+        </div>
+        <div class="language-selector">
+            Việt Nam English • •
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar"></div>
+                <span>User Name</span>
+            </div>
+            <nav>
+                <div class="menu-item">Quản lý tài khoản ▼</div>
+                <div class="submenu">
+                    <a href="#">Tài khoản sinh viên</a>
+                    <a href="#">Tài khoản nhân viên</a>
+                </div>
+                
+                <div class="menu-item">Quản lý phòng ▼</div>
+                <div class="submenu">
+                    <a href="#">Ban quản lý</a>
+                    <a href="#">Thông tin phòng</a>
+                </div>
+                
+                <div class="menu-item">Quản lý hợp đồng ▼</div>
+                <div class="submenu">
+                    <a href="#">Thông tin hợp đồng</a>
+                    <a href="#">Mã hợp đồng</a>
+                </div>
+                
+                <div class="menu-item">Quản lý sinh viên ▼</div>
+                <div class="submenu">
+                    <a href="thongtin.html">Thông tin sinh viên</a>
+                    <a href="recognition.html">Lịch sử ra/vào</a>
+                </div>
+                
+                <div class="menu-item">Báo cáo ▼</div>
+            </nav>
+        </aside>
+        <main>
+            <h1>Chào mừng đến với hệ thống quản lý Ký túc xá Trường Đại học Duy Tân</h1>
+            <p>Vui lòng chọn các chức năng trên thanh công cụ để làm việc!</p>
+            <div class="dashboard">
+                <div class="dashboard-item"></div>
+                <div class="dashboard-item"></div>
+                <div class="dashboard-item"></div>
+                <div class="dashboard-item"></div>
+                <div class="dashboard-item"></div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
